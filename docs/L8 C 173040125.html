@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var pilihanUser = prompt("Apakah kamu pilih gajah, orang, atau semut?");
+
+	var pilihComputer = Math.random();
+
+	if (pilihComputer < 0.34){
+		pilihComputer = "gajah";
+	} else if (pilihComputer <= 0.67) {
+		pilihComputer="orang";
+	}else{
+		pilihComputer = "semut";
+	}
+
+	alert("Pilihan Komputer = "+pilihComputer);
+	if(pilihComputer == pilihanUser){
+		alert("Seri");
+	}else if (pilihComputer == "gajah" && pilihanUser == "semut") {
+		alert("Menang");
+	}else if (pilihComputer == "gajah" && pilihanUser == "orang"){
+		alert("Kalah");
+	}else if (pilihComputer == "orang" && pilihanUser == "semut"){
+		alert("Kalah");
+	}else if (pilihComputer == "orang" && pilihanUser == "gajah"){
+		alert("Menang");
+	}else if (pilihComputer == "semut" && pilihanUser == "orang"){
+		alert("Menang");
+	}else if (pilihComputer == "semut" && pilihanUser == "gajah"){
+		alert("Kalah");
+	}else{
+		alert("eror");
+	};
+</script>
+<center><a href="../index.html" class="button noz">Index</a></center>
+
+</body>
+</html>

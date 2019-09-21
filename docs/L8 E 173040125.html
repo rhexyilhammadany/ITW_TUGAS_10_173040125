@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+	var bintang = prompt('bintang-bintang'),
+	mToInt = parseInt(bintang);
+	var tambah= ' ' ;
+		function myStars(jumlah) {
+		    for (var i = 0; i < jumlah ; i++) {
+		        for (var k = 0; k < jumlah - i ; k++) {
+		            tambah += '+';
+		        }
+		        for (var j = 0; j < i ; j++) {
+		            tambah += '#';
+		        }
+		        tambah += '\n';
+		        }
+		    alert(tambah)
+		}
+myStars(bintang);﻿
+
+	</script>
+
+</body>
+</html>
